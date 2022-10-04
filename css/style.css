@@ -35,13 +35,13 @@ option {
   gap: 5px;
 }
 
-.radio_group {
+.radio_opts {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.radio_label {
+.radio_block {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -90,13 +90,13 @@ button {
   border-radius: 5px;
 }
 
-.check_group {
+.check_opts {
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
 
-.check_label {
+.check_block {
   display: flex;
   flex-direction: column;
   gap: 3px;
