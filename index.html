@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <title>Fork Me! FCC: Test Suite Template</title>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     <main class="main">
       <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description">
@@ -19,116 +23,78 @@
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Name" required />
           </div>
+
           <div class="input">
             <label for="email">Email</label>
-            <input
-              type="email"
-              placeholder="Email Address"
-              id="email"
-              required
-              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            />
+            <input type="email" placeholder="Email Address" id="email" required pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
           </div>
+
           <div class="input">
-            <label for="number">Number</label>
-            <input type="number" id="number" min="1" max="50" />
+            <label for="number">Contact</label>
+            <input type="number" placeholder="" id="Phone Number" min="0700000000" max="0799999999" />
           </div>
         </fieldset>
 
         <fieldset>
-          <div class="radio_label">
+          <div class="radio_block">
             <label>Would you recommend freeCodeCamp to a friend?</label>
-            <div class="radio_group">
+
+            <div class="radio_opts">
               <label class="radios">
-                <input type="radio" name="radio_button" />maybe
+                <input type="radio" name="radio_button" />Definitely!!
               </label>
+
               <label class="radios">
-                <input type="radio" name="radio_button" />definitely
+                <input type="radio" name="radio_button" />Umm, maybe?
               </label>
+
               <label class="radios">
-                <input type="radio" name="radio_button" />not sure
+                <input type="radio" name="radio_button" />Nope!
               </label>
             </div>
           </div>
+
           <div class="select">
-            <label>How do you feel about our service ?</label>
+            <label>How would you describe your experience?</label>
             <select id="dropdown">
               <option value="Happy with service">Happy with service</option>
               <option value="Unhappy with service">Unhappy with service</option>
             </select>
           </div>
 
-          <div class="check_label">
-            <label for="checkbox"
-              >What would you like to see improved? (Check all that
-              apply)</label
-            >
-            <div class="check_group">
+          <div class="checkbox_block">
+            <label for="checkbox">What would you like to see improved? (Check all that apply)</label>
+
+            <div class="check_opts">
               <div class="checks">
                 <label for="frontend">
-                  <input
-                    id="frontend"
-                    class="checkboxes"
-                    type="checkbox"
-                    value="frontend"
-                  />frontend</label
-                >
+                  <input id="frontend" class="checkboxes" type="checkbox" value="frontend"/>frontend</label>
               </div>
+
               <div class="checks">
                 <label for="devops">
-                  <input
-                    id="devops"
-                    class="checkboxes"
-                    type="checkbox"
-                    value="devops"
-                  />devops</label
-                >
+                  <input id="devops" class="checkboxes" type="checkbox" value="devops"/>devops</label>
               </div>
+
               <div class="checks">
                 <label for="fullstack">
-                  <input
-                    id="fullstack"
-                    class="checkboxes"
-                    type="checkbox"
-                    value="fullstack"
-                  />fullstack</label
-                >
+                  <input id="fullstack" class="checkboxes" type="checkbox" value="fullstack"/>fullstack</label>
               </div>
+
               <div class="checks">
                 <label for="backend">
-                  <input
-                    id="backend"
-                    class="checkboxes"
-                    type="checkbox"
-                    value="backend"
-                  />backend</label
-                >
+                  <input id="backend" class="checkboxes" type="checkbox" value="backend"/>backend</label>
               </div>
             </div>
           </div>
 
           <h4 class="text_area">Any suggestions?</h4>
-          <textarea
-            placeholder="Enter your comment here"
-            rows="5"
-            col="20"
-          ></textarea>
+          <textarea placeholder="Enter your comment here" rows="5" col="20"></textarea>
           <button type="submit">Submit</button>
         </fieldset>
       </form>
 
-      <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    --></main>
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>
